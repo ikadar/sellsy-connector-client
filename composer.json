@@ -1,0 +1,23 @@
+{
+    "name": "i-kadar/sellsy-connector-client",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "11.0.x-dev"
+    },
+    "license": "Apache-2.0 license",
+    "autoload": {
+        "psr-4": {
+            "IKadar\\SellsyConnectorClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Istvan Kadar",
+            "email": "ika@wine-logics.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/http-client": "7.1.x-dev"
+    }
+}
