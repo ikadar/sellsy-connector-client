@@ -5,7 +5,7 @@
         "phpunit/phpunit": "11.0.x-dev",
         "symfony/var-dumper": "7.1.x-dev"
     },
-    "license": "Apache-2.0 license",
+    "license": "Apache-2.0",
     "autoload": {
         "psr-4": {
             "IKadar\\SellsyConnectorClient\\": "src/"
