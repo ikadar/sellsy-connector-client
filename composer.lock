@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "efce040ac05b674564ce6adaa6b1fa34",
+    "content-hash": "b79a8c5e3743389e7103dce464414727",
     "packages": [
         {
             "name": "psr/container",
@@ -113,16 +113,16 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "7.1.x-dev",
+            "version": "7.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "853362285d857d29df4e9a4751959d7edb349c3e"
+                "reference": "db714986d3b84330bb6196fdb201c9f79b3a8853"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/853362285d857d29df4e9a4751959d7edb349c3e",
-                "reference": "853362285d857d29df4e9a4751959d7edb349c3e",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/db714986d3b84330bb6196fdb201c9f79b3a8853",
+                "reference": "db714986d3b84330bb6196fdb201c9f79b3a8853",
                 "shasum": ""
             },
             "require": {
@@ -156,6 +156,7 @@
                 "symfony/process": "^6.4|^7.0",
                 "symfony/stopwatch": "^6.4|^7.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -185,7 +186,7 @@
                 "http"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/7.1"
+                "source": "https://github.com/symfony/http-client/tree/v7.0.2"
             },
             "funding": [
                 {
@@ -201,7 +202,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-30T20:01:23+00:00"
+            "time": "2023-12-02T12:51:19+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -2191,7 +2192,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "symfony/http-client": 20,
         "phpunit/phpunit": 20,
         "symfony/var-dumper": 20
     },
