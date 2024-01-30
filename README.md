@@ -1,0 +1,1 @@
+# sellsy-connector-client
