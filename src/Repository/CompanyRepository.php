@@ -3,26 +3,16 @@
 namespace IKadar\SellsyConnectorClient\Repository;
 
 use Exception;
-use IKadar\HTTPClient\Client\ClientInterface;
-use IKadar\Repository\QueryBuilder\QueryBuilderInterface;
+use IKadar\Repository\Repository\Repository;
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 
-class CompanyRepository
+class CompanyRepository extends Repository
 {
-    use RepositoryTrait;
-
-    public function __construct(
-        private readonly ClientInterface       $client,
-        private readonly QueryBuilderInterface $queryBuilder,
-    )
-    {
-    }
 
     /**
-     * @throws TransportExceptionInterface
      * @throws ServerExceptionInterface
      * @throws RedirectionExceptionInterface
      * @throws ClientExceptionInterface
