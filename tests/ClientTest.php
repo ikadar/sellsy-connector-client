@@ -5,6 +5,7 @@ namespace Tests;
 use IKadar\HTTPClient\Client\Client;
 use IKadar\HTTPClient\Connection\StaticOAuthConnection;
 use IKadar\HTTPClient\Request\RequestFactory;
+use IKadar\Repository\DataAccess\HTTPAPIClient;
 use IKadar\SellsyConnectorClient\Repository\CompanyRepository;
 use IKadar\SellsyConnectorClient\SellsyConnectorAPIQueryBuilder;
 use PHPUnit\Framework\TestCase;
@@ -32,17 +33,16 @@ class ClientTest extends TestCase
         $testApiClientId = "65bd1d2a73e19";
         $testApiSecret = "EO8Dt2KTjuRGmOnHEWuJbg==";
 
-
         // todo: $this->client can come from services.yaml as a parameter
         $this->companyRepository = new CompanyRepository(
-            new Client(
+            new HTTPAPIClient(new Client(
                 new StaticOAuthConnection(
                     $testApiRootUrl,
                     $testApiVersion,
                     $testApiClientId,
                     $testApiSecret,
                 )
-            ),
+            )),
             new SellsyConnectorAPIQueryBuilder(new RequestFactory())
         );
     }
