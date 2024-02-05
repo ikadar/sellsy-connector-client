@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "571b505497ea308c2e530c2219dd9eb5",
+    "content-hash": "836cad3de3c2f4c66bc92263de8a07ab",
     "packages": [
         {
             "name": "i-kadar/http-client",
@@ -12,18 +12,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ikadar/http-client.git",
-                "reference": "4320a77c112d52c556e5033ea1709b3260530d85"
+                "reference": "dd1624d560b7c86c43ec65d6c5431f7d723838ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ikadar/http-client/zipball/4320a77c112d52c556e5033ea1709b3260530d85",
-                "reference": "4320a77c112d52c556e5033ea1709b3260530d85",
+                "url": "https://api.github.com/repos/ikadar/http-client/zipball/dd1624d560b7c86c43ec65d6c5431f7d723838ff",
+                "reference": "dd1624d560b7c86c43ec65d6c5431f7d723838ff",
                 "shasum": ""
             },
             "require": {
                 "symfony/http-client": "7.0.*",
-                "symfony/routing": "7.1.x-dev",
-                "symfony/yaml": "7.1.x-dev"
+                "symfony/routing": "7.0.*",
+                "symfony/yaml": "7.0.*"
             },
             "require-dev": {
                 "phpunit/phpunit": "10.5.*",
@@ -50,7 +50,7 @@
                 "issues": "https://github.com/ikadar/http-client/issues",
                 "source": "https://github.com/ikadar/http-client/tree/main"
             },
-            "time": "2024-02-05T12:16:54+00:00"
+            "time": "2024-02-05T18:48:33+00:00"
         },
         {
             "name": "i-kadar/repository",
@@ -58,12 +58,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ikadar/repository.git",
-                "reference": "1ff2e573a9df3d48b448221681c1a4186c47c084"
+                "reference": "da2a2ac52c8e9106021d92a413cae90ad9923385"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ikadar/repository/zipball/1ff2e573a9df3d48b448221681c1a4186c47c084",
-                "reference": "1ff2e573a9df3d48b448221681c1a4186c47c084",
+                "url": "https://api.github.com/repos/ikadar/repository/zipball/da2a2ac52c8e9106021d92a413cae90ad9923385",
+                "reference": "da2a2ac52c8e9106021d92a413cae90ad9923385",
                 "shasum": ""
             },
             "require": {
@@ -94,7 +94,7 @@
                 "issues": "https://github.com/ikadar/repository/issues",
                 "source": "https://github.com/ikadar/repository/tree/main"
             },
-            "time": "2024-02-05T13:14:37+00:00"
+            "time": "2024-02-05T18:36:23+00:00"
         },
         {
             "name": "psr/container",
@@ -503,7 +503,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.29.0"
             },
             "funding": [
                 {
@@ -523,16 +523,16 @@
         },
         {
             "name": "symfony/routing",
-            "version": "7.1.x-dev",
+            "version": "7.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "812d5e044da5f3b72320268489d8807cd9c7722e"
+                "reference": "858b26756ffc35a11238b269b484ee3a393a74d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/812d5e044da5f3b72320268489d8807cd9c7722e",
-                "reference": "812d5e044da5f3b72320268489d8807cd9c7722e",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/858b26756ffc35a11238b269b484ee3a393a74d3",
+                "reference": "858b26756ffc35a11238b269b484ee3a393a74d3",
                 "shasum": ""
             },
             "require": {
@@ -552,6 +552,7 @@
                 "symfony/http-foundation": "^6.4|^7.0",
                 "symfony/yaml": "^6.4|^7.0"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -584,7 +585,7 @@
                 "url"
             ],
             "support": {
-                "source": "https://github.com/symfony/routing/tree/7.1"
+                "source": "https://github.com/symfony/routing/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -600,7 +601,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-02T06:47:01+00:00"
+            "time": "2024-01-30T13:55:15+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -687,16 +688,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "7.1.x-dev",
+            "version": "7.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "6bd0f04337f225341c841d8f9625285e7052758f"
+                "reference": "2d4fca631c00700597e9442a0b2451ce234513d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/6bd0f04337f225341c841d8f9625285e7052758f",
-                "reference": "6bd0f04337f225341c841d8f9625285e7052758f",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/2d4fca631c00700597e9442a0b2451ce234513d3",
+                "reference": "2d4fca631c00700597e9442a0b2451ce234513d3",
                 "shasum": ""
             },
             "require": {
@@ -709,6 +710,7 @@
             "require-dev": {
                 "symfony/console": "^6.4|^7.0"
             },
+            "default-branch": true,
             "bin": [
                 "Resources/bin/yaml-lint"
             ],
@@ -738,7 +740,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/7.1"
+                "source": "https://github.com/symfony/yaml/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -754,7 +756,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-03T18:45:40+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         }
     ],
     "packages-dev": [
@@ -1326,12 +1328,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a76110264bece2fcae400433084321af7e89c496"
+                "reference": "50b8e314b6d0dd06521dc31d1abffa73f25f850c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a76110264bece2fcae400433084321af7e89c496",
-                "reference": "a76110264bece2fcae400433084321af7e89c496",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/50b8e314b6d0dd06521dc31d1abffa73f25f850c",
+                "reference": "50b8e314b6d0dd06521dc31d1abffa73f25f850c",
                 "shasum": ""
             },
             "require": {
@@ -1403,7 +1405,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.10"
             },
             "funding": [
                 {
@@ -1419,7 +1421,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-02T16:40:22+00:00"
+            "time": "2024-02-04T09:07:51+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -2407,7 +2409,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.29.0"
             },
             "funding": [
                 {
@@ -2431,12 +2433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "a7a061abbf6fe3d4a79032cbc5149a4d65a10234"
+                "reference": "e6349434277fd7def0af30648118e8d94da29f8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/a7a061abbf6fe3d4a79032cbc5149a4d65a10234",
-                "reference": "a7a061abbf6fe3d4a79032cbc5149a4d65a10234",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/e6349434277fd7def0af30648118e8d94da29f8f",
+                "reference": "e6349434277fd7def0af30648118e8d94da29f8f",
                 "shasum": ""
             },
             "require": {
@@ -2491,7 +2493,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v7.0.3"
+                "source": "https://github.com/symfony/var-dumper/tree/7.0"
             },
             "funding": [
                 {
@@ -2507,7 +2509,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T15:02:46+00:00"
+            "time": "2024-02-03T21:13:24+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -2563,8 +2565,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "symfony/routing": 20,
-        "symfony/yaml": 20,
         "i-kadar/http-client": 20,
         "i-kadar/repository": 20
     },

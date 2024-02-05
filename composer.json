@@ -20,8 +20,8 @@
     "minimum-stability": "dev",
     "require": {
         "symfony/http-client": "7.0.*",
-        "symfony/routing": "7.1.x-dev",
-        "symfony/yaml": "7.1.x-dev",
+        "symfony/routing": "7.0.*",
+        "symfony/yaml": "7.0.*",
         "i-kadar/http-client": "dev-main",
         "i-kadar/repository": "dev-main"
     }
