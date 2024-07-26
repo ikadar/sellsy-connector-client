@@ -22,3 +22,15 @@ getNonexistentEndpoint:
   requirements: []
   method: "POST"
   queryParameters: []
+
+getRateCategories:
+  path: "/rate-categories"
+  requirements: []
+  method: "GET"
+  queryParameters: ["label"]
+
+getTaxes:
+  path: "/taxes"
+  requirements: []
+  method: "GET"
+  queryParameters: ["rate"]
