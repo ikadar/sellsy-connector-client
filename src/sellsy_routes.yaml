@@ -34,3 +34,9 @@ getTaxes:
   requirements: []
   method: "GET"
   queryParameters: ["rate"]
+
+createInvoice:
+  path: "/invoice"
+  requirements: []
+  method: "POST"
+  queryParameters: []
