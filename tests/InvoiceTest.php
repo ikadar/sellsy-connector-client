@@ -51,6 +51,7 @@ class InvoiceTest extends TestCase
     {
 
         $payload = [
+            "sid" => "s1",
             "date" => "2024-07-25",
             "due_date" => "2024-08-01",
             "sellsy_company_id" => 35072332,

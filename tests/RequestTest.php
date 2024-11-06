@@ -47,7 +47,7 @@ class RequestTest extends TestCase
                 "page" => "instance1",
                 "foo" => 15,
                 "bar" => "AAA",
-                "sid" => "instance1"
+                "sid" => "s1"
             ],
             options: []
         );

@@ -29,9 +29,10 @@ class CompanyRepository extends Repository
     /**
      * @throws Exception|TransportExceptionInterface
      */
-    public function getCompanyById($id): ?array
+    public function getCompanyById($sid, $id): ?array
     {
         $response = $this->executeQuery("getCompanyById", [
+            "sid" => $sid,
             "id" => $id
         ]);
         return $response["data"][0];
@@ -40,9 +41,10 @@ class CompanyRepository extends Repository
     /**
      * @throws Exception|TransportExceptionInterface
      */
-    public function getCompaniesByIds($ids): ?array
+    public function getCompaniesByIds($sid, $ids): ?array
     {
         return $this->executeQuery("getCompaniesByIds", [
+            "sid" => $sid,
             "sellsy_ids" => $ids
         ]);
     }
@@ -50,9 +52,11 @@ class CompanyRepository extends Repository
     /**
      * @throws Exception|TransportExceptionInterface
      */
-    public function getNonexistentEndpoint(): ?array
+    public function getNonexistentEndpoint($sid): ?array
     {
-        return $this->executeQuery("getNonexistentEndpoint", []);
+        return $this->executeQuery("getNonexistentEndpoint", [
+            "sid" => $sid
+        ]);
     }
 
 }
