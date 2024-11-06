@@ -17,9 +17,10 @@ class CompanyRepository extends Repository
      * @throws RedirectionExceptionInterface
      * @throws ClientExceptionInterface
      */
-    public function getCompanies($name = null, $page = 0, $limit = 10): ?array
+    public function getCompanies($sid, $name = null, $page = 0, $limit = 10): ?array
     {
         return $this->executeQuery("getCompanies", [
+            "sid" => $sid,
             "name" => $name,
             "page" => $page,
             "limit" => $limit
