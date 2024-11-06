@@ -17,10 +17,9 @@ class DictionaryRepository extends Repository
      * @throws RedirectionExceptionInterface
      * @throws ClientExceptionInterface
      */
-    public function getRateCategories($sid, $label = null, $page = 0, $limit = 10): ?array
+    public function getRateCategories($label = null, $page = 0, $limit = 10): ?array
     {
         return $this->executeQuery("getRateCategories", [
-            "sid" => $sid,
             "label" => $label,
             "page" => $page,
             "limit" => $limit
@@ -32,10 +31,9 @@ class DictionaryRepository extends Repository
      * @throws RedirectionExceptionInterface
      * @throws ClientExceptionInterface
      */
-    public function getRateCategoryByLabel($sid, $label = null, $page = 0, $limit = 10): ?array
+    public function getRateCategoryByLabel($label = null, $page = 0, $limit = 10): ?array
     {
         return $this->executeQuery("getRateCategories", [
-            "sid" => $sid,
             "label" => $label,
             "page" => $page,
             "limit" => $limit
@@ -45,10 +43,9 @@ class DictionaryRepository extends Repository
     /**
      * @throws Exception|TransportExceptionInterface
      */
-    public function getTaxes($sid, $rate = null, $page = 0, $limit = 10): ?array
+    public function getTaxes($rate = null, $page = 0, $limit = 10): ?array
     {
         $response = $this->executeQuery("getTaxes", [
-            "sid" => $sid,
             "rate" => $rate,
             "page" => $page,
             "limit" => $limit
@@ -59,10 +56,9 @@ class DictionaryRepository extends Repository
     /**
      * @throws Exception|TransportExceptionInterface
      */
-    public function getTaxByLabel($sid, $rate = null, $page = 0, $limit = 10): ?array
+    public function getTaxByLabel($rate = null, $page = 0, $limit = 10): ?array
     {
         $response = $this->executeQuery("getTaxes", [
-            "sid" => $sid,
             "rate" => $rate,
             "page" => $page,
             "limit" => $limit

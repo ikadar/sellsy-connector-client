@@ -53,7 +53,7 @@ class DictionaryTest extends TestCase
         dump(__METHOD__);
 
         try {
-            $response = $this->dictionaryRepository->getRateCategories("i1");
+            $response = $this->dictionaryRepository->getRateCategories();
         } catch (
         ClientExceptionInterface|
         RedirectionExceptionInterface|
@@ -75,7 +75,7 @@ class DictionaryTest extends TestCase
 
         $label = "HT";
         try {
-            $response = $this->dictionaryRepository->getRateCategoryByLabel("i1", $label);
+            $response = $this->dictionaryRepository->getRateCategoryByLabel($label);
         } catch (
         ClientExceptionInterface|
         RedirectionExceptionInterface|
@@ -96,7 +96,7 @@ class DictionaryTest extends TestCase
         dump(__METHOD__);
 
         try {
-            $response = $this->dictionaryRepository->getTaxes("i1");
+            $response = $this->dictionaryRepository->getTaxes();
         } catch (
         ClientExceptionInterface|
         RedirectionExceptionInterface|
@@ -118,7 +118,7 @@ class DictionaryTest extends TestCase
 
         $label = "20";
         try {
-            $response = $this->dictionaryRepository->getTaxByLabel("i1", $label);
+            $response = $this->dictionaryRepository->getTaxByLabel($label);
         } catch (
         ClientExceptionInterface|
         RedirectionExceptionInterface|
