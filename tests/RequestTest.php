@@ -44,9 +44,10 @@ class RequestTest extends TestCase
             "getCompanyById",
             parameters: [
                 "id" => 1,
-                "page" => 6,
+                "page" => "instance1",
                 "foo" => 15,
-                "bar" => "AAA"
+                "bar" => "AAA",
+                "sid" => "instance1"
             ],
             options: []
         );

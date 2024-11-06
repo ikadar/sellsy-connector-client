@@ -1,42 +1,42 @@
 getCompanies:
-  path: "/companies"
+  path: "/{sid}/companies"
   requirements: []
   method: "GET"
   queryParameters: ["name", "page", "limit"]
 
 getCompanyById:
-  path: "/company/{id}"
+  path: "/{sid}/company/{id}"
   requirements:
     id: \d+
   method: "GET"
   queryParameters: []
 
 getCompaniesByIds:
-  path: "/companies"
+  path: "/{sid}/companies"
   requirements: []
   method: "POST"
   queryParameters: []
 
 getNonexistentEndpoint:
-  path: "/non-existent"
+  path: "/{sid}/non-existent"
   requirements: []
   method: "POST"
   queryParameters: []
 
 getRateCategories:
-  path: "/rate-categories"
+  path: "/{sid}/rate-categories"
   requirements: []
   method: "GET"
   queryParameters: ["label"]
 
 getTaxes:
-  path: "/taxes"
+  path: "/{sid}/taxes"
   requirements: []
   method: "GET"
   queryParameters: ["rate"]
 
 createInvoice:
-  path: "/invoice"
+  path: "/{sid}/invoice"
   requirements: []
   method: "POST"
   queryParameters: []
