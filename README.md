@@ -1,1 +1,1 @@
-# sellsy-connector-client
+# sellsy-connector-client V0.2
