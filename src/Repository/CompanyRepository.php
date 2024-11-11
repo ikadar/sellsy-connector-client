@@ -23,7 +23,7 @@ class CompanyRepository extends Repository
             "name" => $name,
             "page" => $page,
             "limit" => $limit
-        ]);
+        ])->get();
     }
 
     /**
@@ -34,7 +34,7 @@ class CompanyRepository extends Repository
         $response = $this->executeQuery("getCompanyById", [
             "id" => $id
         ]);
-        return $response["data"][0];
+        return $response->get('["data"][0]');
     }
 
     /**
@@ -44,7 +44,7 @@ class CompanyRepository extends Repository
     {
         return $this->executeQuery("getCompaniesByIds", [
             "sellsy_ids" => $ids
-        ]);
+        ])->get();
     }
 
     /**
@@ -53,7 +53,7 @@ class CompanyRepository extends Repository
     public function getNonexistentEndpoint(): ?array
     {
         return $this->executeQuery("getNonexistentEndpoint", [
-        ]);
+        ])->get();
     }
 
 }

@@ -23,7 +23,7 @@ class DictionaryRepository extends Repository
             "label" => $label,
             "page" => $page,
             "limit" => $limit
-        ]);
+        ])->get();
     }
 
     /**
@@ -37,7 +37,7 @@ class DictionaryRepository extends Repository
             "label" => $label,
             "page" => $page,
             "limit" => $limit
-        ])["data"][0];
+        ])->get('["data"][0]');
     }
 
     /**
@@ -50,7 +50,7 @@ class DictionaryRepository extends Repository
             "page" => $page,
             "limit" => $limit
         ]);
-        return $response;
+        return $response->get();
     }
 
     /**
@@ -63,7 +63,7 @@ class DictionaryRepository extends Repository
             "page" => $page,
             "limit" => $limit
         ]);
-        return $response["data"][0];
+        return $response->get('["data"][0]');
     }
 
 }

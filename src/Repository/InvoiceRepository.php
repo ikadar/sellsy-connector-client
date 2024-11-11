@@ -17,7 +17,7 @@ class InvoiceRepository extends Repository
      */
     public function createInvoice($payload): ?array
     {
-        return $this->executeQuery("createInvoice", $payload);
+        return $this->executeQuery("createInvoice", $payload)->get();
     }
 
 }

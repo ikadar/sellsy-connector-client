@@ -6,9 +6,11 @@ use IKadar\HTTPClient\Client\Client;
 use IKadar\HTTPClient\Connection\StaticOAuthConnection;
 use IKadar\HTTPClient\Request\RequestFactory;
 use IKadar\Repository\DataAccess\HTTPAPIClient;
+use IKadar\Repository\QueryResult\ResultFactory;
 use IKadar\SellsyConnectorClient\Repository\DictionaryRepository;
 use IKadar\SellsyConnectorClient\SellsyConnectorAPIQueryBuilder;
 use PHPUnit\Framework\TestCase;
+use Symfony\Component\PropertyAccess\PropertyAccessor;
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
@@ -41,8 +43,8 @@ class DictionaryTest extends TestCase
                     $testApiVersion,
                     $testApiClientId,
                     $testApiSecret,
-                )
-            )),
+                )),
+                new ResultFactory(new PropertyAccessor())),
             new SellsyConnectorAPIQueryBuilder(new RequestFactory())
         );
     }

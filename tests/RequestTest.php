@@ -27,8 +27,7 @@ class RequestTest extends TestCase
                 $testApiVersion,
                 $testApiClientId,
                 $testApiSecret,
-            ),
-            new RequestFactory()
+            )
         );
     }
 
