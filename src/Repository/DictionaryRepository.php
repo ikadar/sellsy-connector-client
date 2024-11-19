@@ -37,7 +37,7 @@ class DictionaryRepository extends Repository
             "label" => $label,
             "page" => $page,
             "limit" => $limit
-        ])->get('["data"][0]');
+        ])->get("[data][0]");
     }
 
     /**
@@ -63,7 +63,7 @@ class DictionaryRepository extends Repository
             "page" => $page,
             "limit" => $limit
         ]);
-        return $response->get('["data"][0]');
+        return $response->get('[data][0]');
     }
 
 }
