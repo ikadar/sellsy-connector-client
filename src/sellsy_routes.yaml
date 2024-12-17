@@ -40,3 +40,9 @@ createInvoice:
   requirements: []
   method: "POST"
   queryParameters: []
+
+getShippingCompanies:
+  path: "/items"
+  requirements: []
+  method: "GET"
+  queryParameters: []

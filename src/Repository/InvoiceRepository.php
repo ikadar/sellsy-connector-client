@@ -20,4 +20,13 @@ class InvoiceRepository extends Repository
         return $this->executeQuery("createInvoice", $payload);
     }
 
+    /**
+     * @throws Exception|TransportExceptionInterface
+     */
+    public function getShippingCompanies($id): ?array
+    {
+        $response = $this->executeQuery("getShippingCompanies", []);
+        return $response["data"][0];
+    }
+
 }
