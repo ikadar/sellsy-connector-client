@@ -66,4 +66,24 @@ class DictionaryRepository extends Repository
         return $response["data"][0];
     }
 
+    /**
+     * @throws Exception|TransportExceptionInterface
+     */
+    public function getShippingCompanies(): ?array
+    {
+        $response = $this->executeQuery("getShippingCompanies", []);
+        return $response["data"];
+    }
+
+    /**
+     * @throws Exception|TransportExceptionInterface
+     */
+    public function getShippingCompanyByReference($reference = null): ?array
+    {
+        $response = $this->executeQuery("getShippingCompanies", [
+            "reference" => $reference
+        ]);
+        return $response["data"][0];
+    }
+
 }

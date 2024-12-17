@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ikadar/http-client.git",
-                "reference": "dd1624d560b7c86c43ec65d6c5431f7d723838ff"
+                "reference": "7875ead21b221e885b77cbf31c8683be9e45d862"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ikadar/http-client/zipball/dd1624d560b7c86c43ec65d6c5431f7d723838ff",
-                "reference": "dd1624d560b7c86c43ec65d6c5431f7d723838ff",
+                "url": "https://api.github.com/repos/ikadar/http-client/zipball/7875ead21b221e885b77cbf31c8683be9e45d862",
+                "reference": "7875ead21b221e885b77cbf31c8683be9e45d862",
                 "shasum": ""
             },
             "require": {
@@ -50,7 +50,7 @@
                 "issues": "https://github.com/ikadar/http-client/issues",
                 "source": "https://github.com/ikadar/http-client/tree/main"
             },
-            "time": "2024-02-05T18:48:33+00:00"
+            "time": "2024-11-19T09:15:37+00:00"
         },
         {
             "name": "i-kadar/repository",

@@ -45,4 +45,4 @@ getShippingCompanies:
   path: "/items"
   requirements: []
   method: "GET"
-  queryParameters: []
+  queryParameters: ["reference"]

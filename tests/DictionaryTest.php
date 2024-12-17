@@ -133,6 +133,46 @@ class DictionaryTest extends TestCase
         $this->assertTrue(true); // Example assertion
     }
 
+    public function testGetShippingCompanies()
+    {
 
+        dump(__METHOD__);
+
+        try {
+            $response = $this->dictionaryRepository->getShippingCompanies();
+        } catch (
+        ClientExceptionInterface|
+        RedirectionExceptionInterface|
+        ServerExceptionInterface|
+        TransportExceptionInterface
+        $e
+        ) {
+        }
+
+        dump($response);
+
+        $this->assertTrue(true); // Example assertion
+    }
+
+    public function testGetShippingCompanyByReference()
+    {
+        dump(__METHOD__);
+
+        $reference = "DPD";
+        try {
+            $response = $this->dictionaryRepository->getShippingCompanyByReference($reference);
+        } catch (
+        ClientExceptionInterface|
+        RedirectionExceptionInterface|
+        ServerExceptionInterface|
+        TransportExceptionInterface
+        $e
+        ) {
+        }
+
+        dump($response);
+
+        $this->assertTrue(true); // Example assertion
+    }
 
 }
